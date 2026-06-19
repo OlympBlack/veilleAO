@@ -37,13 +37,10 @@ const handleLogin = async () => {
       <div class="text-center mb-10 flex flex-col items-center">
         <!-- Remplacer logo.png par le nom exact de ton image dans le dossier public/ -->
         <img
-          src="/logo_veilleAO.jpg"
+          src="/logo_veilleAO.png"
           alt="VeilleAO Logo"
           class="h-20 w-auto mb-4 object-contain rounded-full shadow-sm border border-zinc-100"
         />
-        <h1 class="text-4xl font-extrabold text-[#00b86b] mb-3 tracking-tight">
-          VeilleAO
-        </h1>
         <p class="text-zinc-500 dark:text-zinc-400 font-medium font-sans">
           Connectez-vous à votre espace
         </p>
@@ -54,6 +51,10 @@ const handleLogin = async () => {
         class="flex flex-col items-center gap-4 w-full px-2 sm:px-6"
       >
         <div class="w-full">
+          <label
+            class="block text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-1"
+            >Identifiant</label
+          >
           <UInput
             v-model="username"
             placeholder="admin"
@@ -75,6 +76,10 @@ const handleLogin = async () => {
         </div>
 
         <div class="w-full">
+          <label
+            class="block text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-1"
+            >Mot de passe</label
+          >
           <UInput
             v-model="password"
             type="password"

@@ -63,12 +63,11 @@ const toggleColorMode = () => {
     >
       <template #header="{ collapsed }">
         <div class="flex items-center gap-2 p-4">
-          <div
-            class="font-bold text-xl text-primary truncate"
-            :class="{ 'text-center w-full': collapsed }"
-          >
-            {{ collapsed ? "V" : "VeilleAO" }}
-          </div>
+          <img
+          src="/logo_veilleAO.png"
+          alt="VeilleAO Logo"
+          class="h-15 w-auto mb-4 mt-4 object-contain rounded-full shadow-sm border border-zinc-100"
+        />
         </div>
       </template>
 
